@@ -3,7 +3,10 @@ project(bmp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(bmp main.cpp)
+add_executable(bmp src/main.cpp
+        src/Image.cpp
+        include/Image.h
+        include/ImageHeader.h)
 
 
 #gtest
